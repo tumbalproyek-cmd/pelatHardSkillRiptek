@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dodo Prasetya — Visual Designer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- Noise Overlay -->
+  <div class="noise"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">
+      <span class="scribble-underline">DP</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about" data-text="About">About</a></li>
+      <li><a href="#skills" data-text="Skills">Skills</a></li>
+      <li><a href="#experience" data-text="Experience">Experience</a></li>
+      <li><a href="#contact" data-text="Contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#experience" class="mobile-link">Experience</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-deco deco-circle-1"></div>
+    <div class="hero-deco deco-circle-2"></div>
+    <div class="hero-deco deco-circle-3"></div>
+
+    <div class="hero-content">
+      <div class="hero-tag">
+        <svg class="tag-star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+        <span>Available for Work</span>
+      </div>
+
+      <h1 class="hero-name">
+        <span class="line-1 reveal">Dodo</span>
+        <span class="line-2 reveal">Prasetya<em>.</em></span>
+      </h1>
+
+      <div class="hero-role reveal">
+        <span class="role-badge">Junior Visual Designer</span>
+        <svg class="arrow-squiggle" viewBox="0 0 80 30" fill="none">
+          <path d="M2 15 Q20 5 40 15 Q60 25 78 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+          <path d="M72 10 L78 15 L72 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+
+      <p class="hero-desc reveal">
+        Crafting visuals that speak before words do — branding, UI, and digital art
+        with a hand-crafted soul.
+      </p>
+
+      <div class="hero-cta reveal">
+        <a href="#contact" class="btn-primary">
+          <span>Let's Collaborate</span>
+          <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#experience" class="btn-outline">View Work</a>
+      </div>
+    </div>
+
+    <!-- Floating Doodles -->
+    <div class="doodle-wrap">
+      <svg class="doodle doodle-star spin-slow" viewBox="0 0 60 60">
+        <path d="M30 4 L34 24 L54 20 L38 34 L48 52 L30 40 L12 52 L22 34 L6 20 L26 24 Z" fill="none" stroke="var(--accent-yellow)" stroke-width="2"/>
+      </svg>
+      <svg class="doodle doodle-zigzag" viewBox="0 0 120 30">
+        <polyline points="0,25 20,5 40,25 60,5 80,25 100,5 120,25" fill="none" stroke="var(--accent-pink)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <svg class="doodle doodle-circle float" viewBox="0 0 60 60">
+        <circle cx="30" cy="30" r="26" fill="none" stroke="var(--accent-cyan)" stroke-width="2" stroke-dasharray="5 6"/>
+      </svg>
+      <svg class="doodle doodle-arrow" viewBox="0 0 60 60">
+        <path d="M10 50 Q30 10 50 30" fill="none" stroke="var(--accent-green)" stroke-width="2" stroke-linecap="round"/>
+        <path d="M44 24 L50 30 L44 36" fill="none" stroke="var(--accent-green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+
+    <!-- Scroll Hint -->
+    <div class="scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-label">
+        <svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="6" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>
+        <span>Who am I</span>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-title">Designing with<br/><em>heart &amp; craft</em></h2>
+          <p>
+            Halo! Saya <strong>Dodo Prasetya</strong>, seorang Junior Visual Designer dari Indonesia.
+            Passion saya ada di dunia visual — dari branding identity, layout digital, hingga ilustrasi.
+          </p>
+          <p>
+            Saya percaya desain yang baik bukan hanya soal estetika, tapi soal 
+            <span class="highlight-text">menyampaikan pesan</span> dengan cara yang paling manusiawi.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num" data-target="2">0</span><span>+</span>
+              <p>Years Designing</p>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-target="30">0</span><span>+</span>
+              <p>Projects Done</p>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-target="15">0</span><span>+</span>
+              <p>Happy Clients</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-visual">
+          <div class="photo-frame">
+            <!-- <div class="photo-placeholder">
+              <svg viewBox="0 0 80 80" class="avatar-icon">
+                <img >
+                <circle cx="40" cy="30" r="18" fill="none" stroke="var(--accent-pink)" stroke-width="2"/>
+                <path d="M10 75 Q10 55 40 55 Q70 55 70 75" fill="none" stroke="var(--accent-pink)" stroke-width="2"/>
+              </svg>
+              <span>Your Photo Here</span>
+            </div> -->
+            <img src="assets/ygIniHarusnyaTransparant.png" alt="Dodo Prasetya" style="width:100%; height:100%; object-fit:cover; border-radius:14px;" />
+            <div class="frame-deco frame-deco-tl"></div>
+            <div class="frame-deco frame-deco-br"></div>
+          </div>
+          <div class="sticky-note note-1">
+            <span>✏️ Figma lover</span>
+          </div>
+          <div class="sticky-note note-2">
+            <span>🎨 Color theory nerd</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-label">
+        <svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="6" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>
+        <span>What I do</span>
+      </div>
+      <h2 class="section-title">Skills &amp; <em>Tools</em></h2>
+
+      <div class="skills-grid">
+
+        <div class="skill-card" data-color="pink">
+          <div class="skill-icon">✦</div>
+          <h3>Brand Identity</h3>
+          <p>Logo design, brand guidelines, visual identity systems yang konsisten dan memorable.</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-pct="85">
+              <div class="skill-bar-fill"></div>
+            </div>
+            <span>85%</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-color="cyan">
+          <div class="skill-icon">◈</div>
+          <h3>UI Design</h3>
+          <p>Desain antarmuka yang intuitif, estetis, dan berpusat pada pengalaman pengguna.</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-pct="78">
+              <div class="skill-bar-fill"></div>
+            </div>
+            <span>78%</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-color="yellow">
+          <div class="skill-icon">❋</div>
+          <h3>Illustration</h3>
+          <p>Digital illustration, character design, dan visual storytelling dengan gaya unik.</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-pct="70">
+              <div class="skill-bar-fill"></div>
+            </div>
+            <span>70%</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-color="green">
+          <div class="skill-icon">◉</div>
+          <h3>Print Design</h3>
+          <p>Poster, flyer, packaging, editorial layout dengan perhatian penuh pada detail cetak.</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-pct="80">
+              <div class="skill-bar-fill"></div>
+            </div>
+            <span>80%</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Tools Marquee -->
+      <div class="tools-section">
+        <p class="tools-label">Tools I use</p>
+        <div class="marquee-wrap">
+          <div class="marquee-track">
+            <span class="tool-pill">Figma</span>
+            <span class="tool-pill">Adobe Illustrator</span>
+            <span class="tool-pill">Photoshop</span>
+            <span class="tool-pill">Canva Pro</span>
+            <span class="tool-pill">Procreate</span>
+            <span class="tool-pill">Adobe InDesign</span>
+            <span class="tool-pill">After Effects</span>
+            <span class="tool-pill">Blender</span>
+            <span class="tool-pill">Figma</span>
+            <span class="tool-pill">Adobe Illustrator</span>
+            <span class="tool-pill">Photoshop</span>
+            <span class="tool-pill">Canva Pro</span>
+            <span class="tool-pill">Procreate</span>
+            <span class="tool-pill">Adobe InDesign</span>
+            <span class="tool-pill">After Effects</span>
+            <span class="tool-pill">Blender</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section experience" id="experience">
+    <div class="container">
+      <div class="section-label">
+        <svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="6" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>
+        <span>My journey</span>
+      </div>
+      <h2 class="section-title">Experience &amp; <em>Education</em></h2>
+
+      <div class="timeline">
+
+        <div class="timeline-item" data-side="right">
+          <div class="timeline-dot" style="--dot-color: var(--accent-pink)"></div>
+          <div class="timeline-card">
+            <div class="tl-tag">Work</div>
+            <span class="tl-date">2024 — Present</span>
+            <h3>Junior Visual Designer</h3>
+            <p class="tl-company">Freelance / Remote</p>
+            <p>Mengerjakan berbagai proyek branding dan UI untuk klien lokal dan internasional. Fokus pada brand identity dan social media visual.</p>
+            <ul class="tl-list">
+              <li>Brand identity untuk 10+ UMKM</li>
+              <li>Social media kit & template design</li>
+              <li>UI mockup untuk startup lokal</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-side="left">
+          <div class="timeline-dot" style="--dot-color: var(--accent-cyan)"></div>
+          <div class="timeline-card">
+            <div class="tl-tag">Work</div>
+            <span class="tl-date">2023 — 2024</span>
+            <h3>Graphic Design Intern</h3>
+            <p class="tl-company">Creative Agency — Semarang</p>
+            <p>Magang selama 6 bulan di biro kreatif lokal. Terlibat dalam produksi materi digital dan cetak untuk berbagai brand klien.</p>
+            <ul class="tl-list">
+              <li>Desain materi iklan digital & cetak</li>
+              <li>Kolaborasi tim dalam pitching konsep</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-side="right">
+          <div class="timeline-dot" style="--dot-color: var(--accent-yellow)"></div>
+          <div class="timeline-card">
+            <div class="tl-tag">Education</div>
+            <span class="tl-date">2021 — 2025</span>
+            <h3>S1 Desain Komunikasi Visual</h3>
+            <p class="tl-company">Universitas — Semarang</p>
+            <p>Studi mendalam di bidang DKV mencakup branding, tipografi, ilustrasi, fotografi, dan desain digital.</p>
+            <ul class="tl-list">
+              <li>Juara 2 Lomba Logo Mahasiswa</li>
+              <li>Anggota aktif UKM Desain Kampus</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-label">
+        <svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="6" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>
+        <span>Say hello</span>
+      </div>
+      <h2 class="section-title">Let's <em>Work Together</em></h2>
+
+      <div class="contact-grid">
+        <div class="contact-text">
+          <p>Punya project menarik? Butuh desain yang berkesan? <br/>Saya siap mendengarkan cerita kamu.</p>
+          <div class="contact-links">
+            <a href="mailto:dodo@email.com" class="contact-link">
+              <span class="link-icon">✉</span>
+              <span>dodo@email.com</span>
+            </a>
+            <a href="#" class="contact-link">
+              <span class="link-icon">ig</span>
+              <span>@dodo.design</span>
+            </a>
+            <a href="#" class="contact-link">
+              <span class="link-icon">in</span>
+              <span>linkedin.com/in/dodo</span>
+            </a>
+            <a href="#" class="contact-link">
+              <span class="link-icon">be</span>
+              <span>behance.net/dodo</span>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Nama</label>
+            <input type="text" id="name" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="john@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Pesan</label>
+            <textarea id="message" rows="4" placeholder="Ceritakan project kamu..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary full-width">
+            <span>Kirim Pesan</span>
+            <svg viewBox="0 0 24 24"><path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z"/></svg>
+          </button>
+          <div class="form-success" id="formSuccess">
+            <span>🎉 Pesan terkirim! Saya akan segera menghubungi kamu.</span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo">Dodo Prasetya</span>
+        <span class="footer-copy">© 2025 — Crafted with ✦ in Semarang</span>
+        <a href="#home" class="back-top">
+          <svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
